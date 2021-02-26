@@ -63,4 +63,18 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 
 ### Running the script and finishing up
 
+- [ ] Submit the script as a SLURM job for one pair of FASTQ files – don’t forget to provide it with the appropriate arguments. Check the SLURM log file and the output files. If it didn’t work, troubleshoot until you get it working. [2]
+- [ ] Do any necessary cleaning up of files, e.g. move your SLURM log file to an appropriate place, and make sure everything is committed to the Git repository. (I’ll need to see the SLURM log file in your repository to see if the script worked.) [0.5]
+- [ ] Create a GitHub repository and push your local Git repository to GitHub. Like last time, start an issue and in the issue, tag @jelmerp. [0.5]
+
+### *Optional (ungraded) - Loop over all samples*
+
+*Creating a script like we did above is worth the trouble mostly if we plan to run it for multiple/many samples. Now, you will create a second script `cutadapt_submit.sh` that loops over all FASTQ files in a specified directory. It doesn’t need to be a “proper” script with a robust header and so on, and shouldn’t contain any SLURM directives: this script merely functions to submit SLURM jobs and can be run interactively.*
+
+- [ ] Loop over a globbing pattern that accepts all `.fastq` files with `R1` in the name in the input directory (recall: we don’t want to loop over the `R2` files explicitly, because they will be automatically included in our previous script).
+- [ ] Inside the loop, the `cutadapt_single.sh` script should be submitted as a SLURM job, similar to your single submission of the script above.
+- [ ] Run the loop.
+- [ ] Check the SLURM log files and the output directory. If it didn’t work, remove all these files, troubleshoot, and try again until it is working.
+
+---
 
