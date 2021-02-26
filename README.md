@@ -2,6 +2,8 @@
 
 Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-sp21/w06_GA_scripts.html))
 
+> ## Introduction
+> 
 > This assignment will work with 6 FASTQ files with sequences from the V4 region of 16S rRNA, generated in a metabarcoding experiment.
 > 
 > The FASTQ files come in pairs: for every sample, there is a FASTQ file with forward reads (or “read 1” reads) that contains _R1_ in its file name, and a FASTQ file with corresponding reverse reads (or “read 2” reads) that contains _R2_ in its file name. So, our 6 FASTQ files consist of 3 pairs of R1-R2 files for 3 biological samples.
@@ -23,12 +25,11 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 ### Getting set up
 
 - [ ] Create a new directory for this assignment, and inside it, initialize a Git repository. Add a very brief README.md describing that this is a repository for such-and-such assignment. (You can also use this README to further document your workflow, but you don’t have to.) [0.5]
-
 - [ ] Copy the FASTQ files from /fs/ess/PAS1855/data/week05/fastq into a directory data/fastq/ inside your assignment’s directory. [0.5]
-
 - [ ] Create a .gitignore file and add a line to make Git ignore all .fastq files. [0.5]
-
 - [ ] Load the Conda module at OSC and create a Conda environment for Cutadapt following these instructions (i.e. just the section “Installation with Conda”). [1]
+  - hint availible at source.
+- [ ] Export the environment description for your Cutadapt environment to a YAML (.yml) file. [0.5]
 
 ### Cutadapt script for one sample
 
