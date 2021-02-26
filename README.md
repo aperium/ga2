@@ -1,5 +1,7 @@
 # README for Graded Assignment 2
 
+My OSC working directory for this project is `/fs/ess/PAS1855/users/$USER/week06/ga2`
+
 Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-sp21/w06_GA_scripts.html))
 
 > ## Introduction
