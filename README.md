@@ -28,8 +28,17 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 - [ ] Copy the FASTQ files from /fs/ess/PAS1855/data/week05/fastq into a directory data/fastq/ inside your assignment’s directory. [0.5]
 - [ ] Create a .gitignore file and add a line to make Git ignore all .fastq files. [0.5]
 - [ ] Load the Conda module at OSC and create a Conda environment for Cutadapt following these instructions (i.e. just the section “Installation with Conda”). [1]
-  - hint availible at source.
+ - hint availible at source.
 - [ ] Export the environment description for your Cutadapt environment to a YAML (.yml) file. [0.5]
 
 ### Cutadapt script for one sample
+
+- [ ] Now, you will write a script called cutadapt_single.sh that runs Cutadapt for one pair of FASTQ files: a file with forward (R1) reads and a file with reverse (R2) reads for the same sample.
+ - The following instructions all refer to what you should write inside the script:
+- [ ] Start with the shebang line followed by SLURM directives. Specify at least the following SLURM directives [0.5]
+ - The class’s OSC project number, PAS1855.
+ - A 20-minute wall-time limit.
+ - Explicitly ask for one node, one process (task), and one core (these are three separate directives).
+- [ ] Next, include the familiar set settings for robust bash scripts, load OSC’s Conda module and then activate your own Cutadapt Conda environment. [0.5]
+ - hint availible at source.
 
