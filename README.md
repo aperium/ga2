@@ -53,12 +53,12 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 - [ ] Assign output file paths (output dir + file name) for the `R1` and `R2` output file, inserting `_trimmed` before the `.fastq` file extension (that is, the output file paths should be along the lines of `<output-dir>/<old-file-basename>_trimmed.fastq`). [1]
 - [ ] Create the output directory if it doesn’t already exist. [0.5]
 - [ ] The actual call to the Cutadapt program should be as follows – just change any variable names as needed:
-> ```
-> cutadapt -a "$primer_f"..."$primer_r_revcomp" \
->     -A "$primer_r"..."$primer_f_revcomp" \
->     --discard-untrimmed --pair-filter=any \
->     -o "$R1_out" -p "$R2_out" "$R1_in" "$R2_in"
-> ```
+  > ```
+  > cutadapt -a "$primer_f"..."$primer_r_revcomp" \
+  >     -A "$primer_r"..."$primer_f_revcomp" \
+  >     --discard-untrimmed --pair-filter=any \
+  >     -o "$R1_out" -p "$R2_out" "$R1_in" "$R2_in"
+  > ```
   - *Optional (ungraded): Touch up the scripts with additional echo statements, date commands, and tests such as whether 4 arguments were provided.*
 
 ### Running the script and finishing up
