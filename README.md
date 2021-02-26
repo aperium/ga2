@@ -24,7 +24,7 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 
 ### Getting set up
 
-- [ ] Create a new directory for this assignment, and inside it, initialize a Git repository. Add a very brief `README.md` describing that this is a repository for such-and-such assignment. (You can also use this README to further document your workflow, but you don’t have to.) [0.5]
+- [X] Create a new directory for this assignment, and inside it, initialize a Git repository. Add a very brief `README.md` describing that this is a repository for such-and-such assignment. (You can also use this README to further document your workflow, but you don’t have to.) [0.5]
 - [ ] Copy the FASTQ files from `/fs/ess/PAS1855/data/week05/fastq` into a directory `data/fastq/` inside your assignment’s directory. [0.5]
 - [ ] Create a `.gitignore` file and add a line to make Git ignore all `.fastq` files. [0.5]
 - [ ] Load the Conda module at OSC and create a Conda environment for Cutadapt following [these](https://cutadapt.readthedocs.io/en/stable/installation.html#installation-with-conda) instructions (i.e. just the section “Installation with Conda”). [1]
