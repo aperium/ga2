@@ -32,8 +32,9 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
   - [X] `module load python/3.6-conda5.2`
   - [X] install new environment with `conda create -n cutadaptenv cutadapt`
   - [X] activate new environment with `source activate cutadaptenv`
-  - [ ] check with `cutadapt --version`
+  - [X] check with `cutadapt --version`
 - [ ] Export the environment description for your Cutadapt environment to a YAML (`.yml`) file. [0.5]
+  - [ ] export with `conda env export > cutadaptenv.yml`
 
 ### Cutadapt script for one sample
 
