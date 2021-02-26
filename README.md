@@ -29,6 +29,10 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 - [X] Create a `.gitignore` file and add a line to make Git ignore all `.fastq` files. [0.5]
 - [ ] Load the Conda module at OSC and create a Conda environment for Cutadapt following [these](https://cutadapt.readthedocs.io/en/stable/installation.html#installation-with-conda) instructions (i.e. just the section “Installation with Conda”). [1]
   - hint availible at source.
+  - [X] `module load python/3.6-conda5.2`
+  - [X] install new environment with `conda create -n cutadaptenv cutadapt`
+  - [ ] activate new environment with `conda activate cutadaptenv`
+  - [ ] check with `cutadapt --version`
 - [ ] Export the environment description for your Cutadapt environment to a YAML (`.yml`) file. [0.5]
 
 ### Cutadapt script for one sample
