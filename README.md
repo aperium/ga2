@@ -56,7 +56,7 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
   - Give each of these variables a descriptive name rather than directly using the placeholder variables (`$1`, etc) – that will make your life easier when writing the rest of the script.
 - [X] Compute the reverse complement for each primer. The hint below in fact has the answer, but please take a moment to think how you might do this with `tr` and a new command called `rev` that simply reverses a string.
   - hint availible at source.
-- [ ] From the file name of the input FASTQ file with forward reads (which is one of the arguments to the script), infer the name of the corresponding FASTQ file with reverse reads, which will have an identical name except that `_R1_` is replaced by `_R2_`. [0.5]
+- [X] From the file name of the input FASTQ file with forward reads (which is one of the arguments to the script), infer the name of the corresponding FASTQ file with reverse reads, which will have an identical name except that `_R1_` is replaced by `_R2_`. [0.5]
 - [ ] Assign output file paths (output dir + file name) for the `R1` and `R2` output file, inserting `_trimmed` before the `.fastq` file extension (that is, the output file paths should be along the lines of `<output-dir>/<old-file-basename>_trimmed.fastq`). [1]
 - [ ] Create the output directory if it doesn’t already exist. [0.5]
 - [ ] The actual call to the Cutadapt program should be as follows – just change any variable names as needed:

@@ -12,7 +12,7 @@ module load python/3.6-conda5.2
 source activate cutadaptenv
 
 # get arguments from commandline
-IN=$1
+RONE=$1
 OUT=$2
 FORWARD=$3
 REVERSE=$4
@@ -20,5 +20,6 @@ REVERSE=$4
 F_REVC=$(echo "$FORWARD" | tr ATCGYRKMBVDH TAGCRYMKVBHD | rev)
 R_REVC=$(echo "$REVERSE" | tr ATCGYRKMBVDH TAGCRYMKVBHD | rev)
 
+RTWO=$(echo "$RONE" | tr _R1_ _R2_)
 
 
