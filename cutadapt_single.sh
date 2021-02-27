@@ -23,13 +23,10 @@ R_REVC=$(echo "$REVERSE" | tr ATCGYRKMBVDH TAGCRYMKVBHD | rev)
 
 RTWO=$(echo "$RONE" | sed 's/_R1_/_R2_/')
 
+mkdir -p "$OUT"
+
 RONE_OUT=$("$OUT"/$(basename "$RONE" .fastq)_trimmed.fastq)
 RTWO_OUT=$("$OUT"/$(basename "$RTWO" .fastq)_trimmed.fastq)
-
-echo RONE_OUT: "$RONE_OUT"
-echo RTWO_OUT: "$RTWO_OUT"
-
-mkdir -p "$OUT"
 
 cutadapt -a "$FORWARD"..."$R_REVC" -A "$REVERSE"..."$F_REVC" --discard-untrimmed --pair-filter=any -o "$RONE_OUT" -p "$RTWO_OUT" "$RONE" "$RTWO"
 
