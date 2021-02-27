@@ -21,7 +21,7 @@ REVERSE=$4
 F_REVC=$(echo "$FORWARD" | tr ATCGYRKMBVDH TAGCRYMKVBHD | rev)
 R_REVC=$(echo "$REVERSE" | tr ATCGYRKMBVDH TAGCRYMKVBHD | rev)
 
-RTWO=$(echo "$RONE" | tr _R1_ _R2_)
+RTWO=$(echo "$RONE" | sed 's/_R1_/_R2_/')
 
 RONE_OUT=$("$OUT"/$(basename "$RONE" .fastq)_trimmed.fastq)
 RTWO_OUT=$("$OUT"/$(basename "$RTWO" .fastq)_trimmed.fastq)
