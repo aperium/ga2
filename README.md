@@ -73,7 +73,7 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 - [X] Submit the script as a SLURM job for one pair of FASTQ files – don’t forget to provide it with the appropriate arguments. Check the SLURM log file and the output files. If it didn’t work, troubleshoot until you get it working. [2]
   - [X] `sbatch cutadapt_single.sh /fs/ess/PAS1855/users/$USER/week06/ga2/data/fastq/201-S4-V4-V5_S53_L001_R1_001.fastq /fs/ess/PAS1855/users/$USER/week06/ga2/data/trimmed GAGTGYCAGCMGCCGCGGTAA TTACCGCGGCKGCTGRCACTC` 
   - [X] debug as needed.
-- [ ] Do any necessary cleaning up of files, e.g. move your SLURM log file to an appropriate place, and make sure everything is committed to the Git repository. (I’ll need to see the SLURM log file in your repository to see if the script worked.) [0.5]
+- [X] Do any necessary cleaning up of files, e.g. move your SLURM log file to an appropriate place, and make sure everything is committed to the Git repository. (I’ll need to see the SLURM log file in your repository to see if the script worked.) [0.5]
 - [ ] Create a GitHub repository and push your local Git repository to GitHub. Like last time, start an issue and in the issue, tag @jelmerp. [0.5]
 
 ### *Optional (ungraded) - Loop over all samples*
