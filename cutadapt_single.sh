@@ -25,3 +25,6 @@ RTWO=$(echo "$RONE" | tr _R1_ _R2_)
 RONE_OUT=$("$OUT"/$(basename "$RONE" .fastq)_trimmed.fastq)
 RTWO_OUT=$("$OUT"/$(basename "$RTWO" .fastq)_trimmed.fastq)
 
+mkdir -p "$OUT"
+
+
