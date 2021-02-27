@@ -40,12 +40,12 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
 
 ### Cutadapt script for one sample
 
-- [ ] Now, you will write a script called `cutadapt_single.sh` that runs Cutadapt for one pair of FASTQ files: a file with forward (`R1`) reads and a file with reverse (`R2`) reads for the same sample.
+- [X] Now, you will write a script called `cutadapt_single.sh` that runs Cutadapt for one pair of FASTQ files: a file with forward (`R1`) reads and a file with reverse (`R2`) reads for the same sample.
   - The following instructions all refer to what you should write **inside the script**:
-- [ ] Start with the shebang line followed by SLURM directives. Specify at least the following SLURM directives [0.5]
-  - The class’s OSC project number, `PAS1855`.
-  - A 20-minute wall-time limit.
-  - Explicitly ask for one node, one process (task), and one core (these are three separate directives).
+- [X] Start with the shebang line followed by SLURM directives. Specify at least the following SLURM directives [0.5]
+  - [X] The class’s OSC project number, `PAS1855`.
+  - [X] A 20-minute wall-time limit.
+  - [X] Explicitly ask for one node, one process (task), and one core (these are three separate directives).
 - [ ] Next, include the familiar set settings for robust bash scripts, load OSC’s Conda module and then activate your own Cutadapt Conda environment. [0.5]
   - hint availible at source.
 - [ ] Let the script take 4 arguments that can be passed to it on the command-line: [1]
