@@ -27,4 +27,5 @@ RTWO_OUT=$("$OUT"/$(basename "$RTWO" .fastq)_trimmed.fastq)
 
 mkdir -p "$OUT"
 
+cutadapt -a "$FORWARD"..."$R_REVC" -A "$REVERSE"..."$F_REVC" --discard-untrimmed --pair-filter=any -o "$RONE_OUT" -p "$RTWO_OUT" "$RONE" "$RTWO"
 
