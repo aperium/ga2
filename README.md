@@ -48,7 +48,7 @@ Instructions copied from assignment ([source](https://mcic-osu.github.io/pracs-s
   - [X] Explicitly ask for one node, one process (task), and one core (these are three separate directives).
 - [X] Next, include the familiar set settings for robust bash scripts, load OSC’s Conda module and then activate your own Cutadapt Conda environment. [0.5]
   - hint availible at source.
-- [ ] Let the script take 4 arguments that can be passed to it on the command-line: [1]
+- [X] Let the script take 4 arguments that can be passed to it on the command-line: [1]
   1. The path to a FASTQ file with forward reads (whose value, when passed to the script from the shell will e.g. be `data/fastq/201-S4-V4-V5_S53_L001_R1_001.fastq`).
   2. The name of the output directory for trimmed FASTQ files (whose value, when passed to the script from the shell will be whatever you pick, e.g. `results/trim`).
   3. The sequence of the forward primer (whose value when passed to the script from the shell, will be `GAGTGYCAGCMGCCGCGGTAA` in this case).
