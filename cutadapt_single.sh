@@ -25,8 +25,8 @@ RTWO=$(echo "$RONE" | sed 's/_R1_/_R2_/')
 
 mkdir -p "$OUT"
 
-RONE_OUT=$("$OUT"/$(basename "$RONE" .fastq)_trimmed.fastq)
-RTWO_OUT=$("$OUT"/$(basename "$RTWO" .fastq)_trimmed.fastq)
+RONE_OUT=$("$OUT""/"$(basename "$RONE" .fastq)_trimmed.fastq)
+RTWO_OUT=$("$OUT""/"$(basename "$RTWO" .fastq)_trimmed.fastq)
 
 cutadapt -a "$FORWARD"..."$R_REVC" -A "$REVERSE"..."$F_REVC" --discard-untrimmed --pair-filter=any -o "$RONE_OUT" -p "$RTWO_OUT" "$RONE" "$RTWO"
 
